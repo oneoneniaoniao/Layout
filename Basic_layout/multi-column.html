@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Multi colmun</title>
+  <style>
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 70px;
+  text-align: center;
+  background-color:#be0000;
+}
+
+.globalNavigation {
+  height: 70px;
+  text-align: center;
+  background-color: #e48900;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+  margin: 10px 0;
+}
+
+.content {
+  flex: 1;
+  background-color: #9ede73;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.lacalNavigation {
+  text-align: center;
+  background-color: #f7ea00;
+  width: 250px;
+}
+
+.footer {
+ height: 70px;
+ text-align: center;
+ background-color:#e48900;
+}
+
+  </style>
+</head>
+  <header class="header">
+<p>header</p>
+  </header>
+  <div class="globalNavigation">
+    <p>Global navigation</p>
+  </div>
+  <main>
+    <div class="content">
+      <p>Contents</p>
+      <p class="p-20 text-indigo-500 text-2xl"><a href="index.html">Back</a></p>
+    </div>
+    <div class="lacalNavigation">
+      <p>Local Navigation</p>
+    </div>
+  </main>
+  <footer class="footer">
+<p>footer</p>
+  </footer>
+  </body>
+</html>

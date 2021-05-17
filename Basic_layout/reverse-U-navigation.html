@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>reverse-U-navigation</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .globalNavigation {
+      height: 70px;
+      text-align: center;
+      background-color: #b6c9f0;
+    }
+    main {
+      display: flex;
+      min-height: 100vh;
+      margin-top: 10px;
+    }
+    .localNavigation {
+      flex: 1;
+      text-align: center;
+      background-color: #f5abc9;
+    }
+    .content {
+      flex: 2;
+      text-align: center;
+      background-color: #ffe5e2;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="globalNavigation">
+    <p>Global Navigation</p>
+  </header>
+  <main>
+    <div class="localNavigation">
+      <p>Local Navigation</p>
+    </div>
+
+    <div class="content">
+      <p>Contents</p>
+      <p class="p-20 text-indigo-500 text-2xl"><a href="index.html">Back</a></p>
+    </div>
+    <div class="localNavigation">
+      <p>Local Navigation</p>
+    </div>
+  </main>
+  </body>
+</html>
