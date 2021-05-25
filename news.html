@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>News Layout</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        height: 70px;
+        text-align: center;
+        background-color: #8785a2;
+      }
+      .globalNavigation {
+        height: 120px;
+        text-align: center;
+        background-color: #ffe2e2;
+      }
+      main {
+        display: flex;
+        min-height: 100vh;
+        margin: 10px 0;
+      }
+      .content-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .content-area::after {
+        display: block;
+        content: "";
+        margin: 10px;
+        width: 300px;
+      }
+      .content-area::before {
+        order: 1;
+        display: block;
+        content: "";
+        margin: 10px;
+        width: 300px;
+      }
+      .content {
+        width: 300px;
+        height: 250px;
+        background-color: #ffc7c7;
+        text-align: center;
+        margin: 10px;
+      }
+      .localNavigation,
+      .ad {
+        background-color: #ffe2e2;
+        text-align: center;
+        width: 250px;
+      }
+      .footer {
+        height: 70px;
+        text-align: center;
+        background-color: #8785a2;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <p>header</p>
+    </header>
+    <div class="globalNavigation">
+      <p>Global Navigation</p>
+      <p class="p-10 text-indigo-500 text-2xl"><a href="index.html">Back</a></p>
+    </div>
+    <main>
+      <div class="localNavigation">
+        <p>Local Navigation</p>
+      </div>
+      <div class="content-area">
+        <div class="content">
+          <p>Content</p>
+        </div>
+        <div class="content">
+          <p>Content</p>
+        </div>
+        <div class="content">
+          <p>Content</p>
+        </div>
+        <div class="content">
+          <p>Content</p>
+        </div>
+        <div class="content">
+          <p>Content</p>
+        </div>
+        <div class="content">
+          <p>Content</p>
+        </div>
+        <div class="content">
+          <p>Content</p>
+        </div>
+      </div>
+      <div class="ad">
+        <p>Advertisement</p>
+      </div>
+    </main>
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
